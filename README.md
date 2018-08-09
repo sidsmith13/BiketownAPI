@@ -3,6 +3,8 @@ For bike riders in Portland,OR this is a tool they can use to find the closest b
 
 A link to your live app: https://sidsmith13.github.io/BiketownAPI/
 
+BiketownAPI/Screen Shot 2018-08-09 at 4.17.29 PM.png
+
 Summary
 
 This APP uses Coord API, which is a bike share API mostly based in Washington and NY. I modified and added the Biketown API data via the Coord API. The Coord API is able to pull in real time available bikes to rent and locations.
