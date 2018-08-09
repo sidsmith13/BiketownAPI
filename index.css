@@ -21,18 +21,19 @@ main {
   border-radius: 12px;
   width: 40%;
   margin: 30px auto;
-  //text-shadow: 1px 1px white, 2px 2px 3px #555;
 }
 body {
   padding-top: 20px;
 }
 #map {
-  margin: 0 auto;
-        height: 50vh;
-        width: 50vh;
-        position: center;
-        box-shadow: 1px white, 2px 2px 3px #555;
+      margin: 0 auto;
+      overflow:hidden;
+      padding-bottom:56.25%;
+      position:relative;
+      height:0;
+      box-shadow: 1px white, 2px 2px 3px #555;
       }
+
 .button {
     margin: 0 auto;
     background-color: rgb(78, 147, 250);
