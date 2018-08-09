@@ -1,0 +1,71 @@
+
+html {
+    background-image: url("http://www.pdxpipeline.com/wp-content/uploads/2017/05/DSCF5843.jpg");
+        height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body {
+  padding-top: 20px;
+}
+h1 {
+  text-align: center;
+  color: white;
+  background:orange;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 12px;
+  width: 40%;
+  margin: 30px auto;
+  text-shadow: 1px 1px white, 2px 2px 3px #555;
+
+}
+h2 {
+    text-align: center;
+    color: white; 
+    background:orange;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+    margin: 30px auto;
+    border-radius: 12px;
+    width: 40%;
+    text-shadow: 1px 1px white, 2px 2px 3px #555;
+
+
+}
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+  margin: 0 auto;
+        height: 50vh;
+        width: 50vh;
+        position: center;
+        box-shadow: 1px white, 2px 2px 3px #555;
+      }
+.button {
+    margin: 0 auto;
+    background-color: rgb(255, 174, 0);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px white, 2px 2px 3px #555;
+    
+}
+
+.button:hover {
+    background-color: #dbc711a8;
+    color: rgb(38, 41, 231);
+}
