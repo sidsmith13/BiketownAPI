@@ -1,10 +1,8 @@
-/******************************************* Constants *******************************************/
-
-// Your Coord API key.
 var COORD_API_access_key = 'HZey4MiUv8ZWVM80IBvEXiIcfen_nnlcI9T4d9vfptI';
 var BIKE_API_URL = 'https://api.coord.co/v1/bike';
 var Portland_CENTER = { lat: 45.512231, lng: -122.658719 };
-var SEARCH_RADIUS_KM = 1;
+var SEARCH_RADIUS_KM = .25;
+//Bike system in Portland
 var LEGEND_ITEMS = [
   'BiketownPDX',
 ];
@@ -64,20 +62,3 @@ function startButton() {
   });
 }
 let map;
-
-// function renderBikeResult(data, items) {
-
-//   for (let i = 0; i < data.items.length; i++) {
-//     $('.js-output').append(`coordinates<li>${data.items[i].type.geometry.coordinates}></div>`);
-//   }
-// }
-  // console.log(features.[i].properties.lat);
-
-// function renderBikes() {
-//   let url = 'https://api.coord.co/v1/bike/location' + '?latitude=' + loc.lat + '&longitude=' + loc.lng + '&radius_km=.1&access_key=' + 'HZey4MiUv8ZWVM80IBvEXiIcfen_nnlcI9T4d9vfptI';
-//   getRequest(url).then(function(bikes) {
-//     if (!bikes.features) {
-//       return;
-//     })
-//   }
-// }
