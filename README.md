@@ -6,7 +6,7 @@ A link to your live app: https://sidsmith13.github.io/BiketownAPI/
 <img width="1224" alt="screen shot 2018-08-13 at 4 38 35 pm" src="https://user-images.githubusercontent.com/29667261/44063984-c00787d8-9f17-11e8-9bba-6ed3527ecfd9.png">
 <img width="769" alt="screen shot 2018-08-13 at 4 42 59 pm" src="https://user-images.githubusercontent.com/29667261/44064049-0eaa0780-9f18-11e8-95a3-c97791a79f36.png">
 
-![biketownapi screenshot](https://user-images.githubusercontent.com/29667261/43932691-6c6b69ca-9bfa-11e8-877f-745d18aad777.PNG)
+
 
 
 Summary
