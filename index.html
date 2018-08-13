@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang="en">
 <html>
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Find the nearest Portland Biketown Share Bikes</title>
+	<title>PDX Bike Finder near quirky Porland places</title>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 	 crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="float-grid.css" />
@@ -13,30 +13,39 @@
 
 <body>
 	<main role="main" aria-live="polite">
+		<div class="col-3">
+			<div class="row">
+				<div class="Map Box"></div>
+				<div id="map"></div>
+				<script src="https://code.jquery.com/jquery.min.js"></script>
+				<script type="text/javascript" src="index.js"></script>
+				<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcdfUt038ajwHRbJEHclvnxARbQ23Lzn4&callback=initMap"></script>
+			</div>
+		</div>
 		<div class="row">
 			<div class="col-3">
 				<div class="PDX Box">
-					<h1>PDX Bike Finder</h1>
+					<img src="https://pbs.twimg.com/profile_images/882722234191577089/QVajM8-w_400x400.jpg" height=100px width=100px</img>;
 				</div>
 				<div class="col-3">
-					<div class="Guide Box"></div>
-					<h2> Hover over the red markers to see bike location and the number of bikes available.</h2>
 				</div>
 				<div class="col-3">
-					<div class="Submit Box"></div>
-					<button id="js-startButton" role="button" class="button" type="submit" onclick="startButton()">Submit</button>
-				</div>
-			</div>
-		</div>
-				<div class="col-3">
-        	<div class="row">
-					<div class="Map Box"></div>
-					<div id="map"></div>
-					<script src="https://code.jquery.com/jquery.min.js"></script>
-					<script type="text/javascript" src="index.js"></script>
-					<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcdfUt038ajwHRbJEHclvnxARbQ23Lzn4&callback=initMap"></script>
-				</div>
+					<div class="Quirky Box">
+						<h1>PDX Find & Ride</h1>
+						<h2>4 Quirky Places To Ride A Biketown Bike To While In Portland</h2>
+						<!-- <button id="js-starkButton" role="button" class="button" type="submit" onclick="starkButton()">Starks Vacuum Cleaner Museum - Find a Bike</button> -->
+						<button id="js-brewButton" role="button" class="button" type="submit" onclick="brewButton()">McMenamins Bagdad Theater, a brewpub movie theater - Find a Bike</button>
+						<button id="js-parkButton" role="button" class="button" type="submit" onclick="parkButton()">Mills End Park, the smallest park in the world- Find a Bike</button>
+						<button id="js-poseButton" role="button" class="button" type="submit" onclick="poseButton()">Pose Under the Keep Portland Weird Sign - Find A Bike</button>
+						<button id="js-roseButton" role="button" class="button" type="submit" onclick="roseButton()">Smell the Roses, Portland's International Rose Test Garden - Find a Bike </button>
+					</div>
+					<div class="col-3">
+						<div class="Guide Box"></div>
+						<h2> Select a destination, then hover your mouse over the red markers on the map to see bike location and the number of
+							bikes available.</h2>
+					</div>
 				</div>
 	</main>
 </body>
+
 </html>
