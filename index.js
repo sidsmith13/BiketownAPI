@@ -36,22 +36,14 @@ function initMap() {
 }
 //Bagdad Theater
 function brewButton() {
-  let promise = new Promise(function (resolve, reject) {
-    navigator.geolocation.getCurrentPosition(resolve, reject);
-  });
-  promise.then(function (results) {
-    console.log(results.coords);
     //Bagdad Theater Location
     loc.lat = 45.51173;
     loc.lng = -122.62543;
     let bikeQueryUrl = 'https://api.coord.co/v1/bike/location' + '?latitude=' + loc.lat + '&longitude=' + loc.lng + '&radius_km=0.4' + '&access_key=' + 'HZey4MiUv8ZWVM80IBvEXiIcfen_nnlcI9T4d9vfptI';
     $.getJSON(bikeQueryUrl, function (APIresult) {
-      console.log(bikeQueryUrl);
       while(markers.length){ markers.pop().setMap(null); };
       $.each(APIresult, function (i, field) {
         for (let i = 0; i < APIresult.features.length; i++) {
-          console.log(APIresult.features[i]);
-          console.log(APIresult.features[i].properties.name);
           var myLatlng = { lat: APIresult.features[i].properties.lat, lng: APIresult.features[i].properties.lon };
           var marker = new google.maps.Marker({
             position: myLatlng,
@@ -63,26 +55,17 @@ function brewButton() {
       });
       map.setCenter(loc);
     });
-  });
 }
 //Mills End Park - Smallest Park
 function parkButton() {
-  let promise = new Promise(function (resolve, reject) {
-    navigator.geolocation.getCurrentPosition(resolve, reject);
-  });
-  promise.then(function (results) {
-    console.log(results.coords);
     //Mills End Park Location
     loc.lat = 45.516282;
     loc.lng = -122.673863;
     let bikeQueryUrl = 'https://api.coord.co/v1/bike/location' + '?latitude=' + loc.lat + '&longitude=' + loc.lng + '&radius_km=0.25' + '&access_key=' + 'HZey4MiUv8ZWVM80IBvEXiIcfen_nnlcI9T4d9vfptI';
     $.getJSON(bikeQueryUrl, function (APIresult) {
-      console.log(bikeQueryUrl);
       while(markers.length){ markers.pop().setMap(null); };
       $.each(APIresult, function (i, field) {
         for (let i = 0; i < APIresult.features.length; i++) {
-          console.log(APIresult.features[i]);
-          console.log(APIresult.features[i].properties.name);
           var myLatlng = { lat: APIresult.features[i].properties.lat, lng: APIresult.features[i].properties.lon };
           var marker = new google.maps.Marker({
             position: myLatlng,
@@ -94,27 +77,18 @@ function parkButton() {
       });
       map.setCenter(loc);
     });
-  });
 }
 //Pose under the Keep Portland Weird Sign
 function poseButton() {
-  let promise = new Promise(function (resolve, reject) {
-    navigator.geolocation.getCurrentPosition(resolve, reject);
-  });
-  promise.then(function (results) {
-    console.log(results.coords);
     //Vicinity of the Keep Portland Weird Sign
     loc.lat = 45.522682;
     loc.lng = -122.662748;
     let bikeQueryUrl = 'https://api.coord.co/v1/bike/location' + '?latitude=' + loc.lat + '&longitude=' + loc.lng + '&radius_km=0.25' + '&access_key=' + 'HZey4MiUv8ZWVM80IBvEXiIcfen_nnlcI9T4d9vfptI';
     $.getJSON(bikeQueryUrl, function (APIresult) {
-      console.log(bikeQueryUrl);
       while(markers.length){ markers.pop().setMap(null); };
       $.each(APIresult, function (i, field) {
         // $("div").append(field + " ");
         for (let i = 0; i < APIresult.features.length; i++) {
-          console.log(APIresult.features[i]);
-          console.log(APIresult.features[i].properties.name);
           var myLatlng = { lat: APIresult.features[i].properties.lat, lng: APIresult.features[i].properties.lon };
           var marker = new google.maps.Marker({
             position: myLatlng,
@@ -126,27 +100,18 @@ function poseButton() {
       });
       map.setCenter(loc);
     });
-  });
 }
 //Rose Test Garden
 function roseButton() {
-  let promise = new Promise(function (resolve, reject) {
-    navigator.geolocation.getCurrentPosition(resolve, reject);
-  });
-  promise.then(function (results) {
-    console.log(results.coords);
     //Portland International Test Garden
     loc.lat = 45.519867;
     loc.lng = -122.70799;
     let bikeQueryUrl = 'https://api.coord.co/v1/bike/location' + '?latitude=' + loc.lat + '&longitude=' + loc.lng + '&radius_km=0.4' + '&access_key=' + 'HZey4MiUv8ZWVM80IBvEXiIcfen_nnlcI9T4d9vfptI';
     $.getJSON(bikeQueryUrl, function (APIresult) {
-      console.log(bikeQueryUrl);
       while(markers.length){ markers.pop().setMap(null); };
       $.each(APIresult, function (i, field) {
         // $("div").append(field + " ");
         for (let i = 0; i < APIresult.features.length; i++) {
-          console.log(APIresult.features[i]);
-          console.log(APIresult.features[i].properties.name);
           var myLatlng = { lat: APIresult.features[i].properties.lat, lng: APIresult.features[i].properties.lon };
           var marker = new google.maps.Marker({
             position: myLatlng,
@@ -158,6 +123,5 @@ function roseButton() {
       });
       map.setCenter(loc);
     });
-  });
 }
 let map;
