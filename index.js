@@ -26,6 +26,7 @@ function initMap() {
       zoomControlOptions: {
         position: google.maps.ControlPosition.LEFT_CENTER
       },
+      //test
       scaleControl: true,
       streetViewControl: true,
       streetViewControlOptions: {
